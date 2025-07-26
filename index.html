@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>爱情小游戏 💖</title>
+
+   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+  <!-- Màn hình bắt đầu -->
+  <div class="start-screen" id="start-screen">
+<h2 id="start-title"></h2>
+<h3 id="start-subtitle"></h3>
+
+    <button onclick="startGame()">开始</button>
+  </div>
+
+  <!-- Giao diện câu hỏi -->
+  <div class="quiz-container" id="quiz">
+    <h2 id="question"></h2>
+    <div class="options" id="options"></div>
+    <div id="result"></div>
+    <div id="final-summary" style="display:none; text-align: left; margin-top: 2rem;"></div>
+
+    <!-- Popup sticker dễ thương -->
+<div id="popup">
+  <div>
+    <img id="popup-img" src="sticker1.gif" alt="sticker" />
+    <p id="popup-msg"></p>
+    <button onclick="closePopup()">继续</button>
+  </div>
+</div>
+
+
+  <button class="music-btn" onclick="playMusic()"></button>
+
+  <audio id="bg-music" loop preload="auto">
+    <source src="Buoc-nhe-vao-trong-tim-anh.mp3" type="audio/mp3">
+    你用的浏览器不支持播放音频哦。
+  </audio>
+<script src="script.js"></script>
+</body>
+</html>
